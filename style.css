@@ -39,7 +39,7 @@ a{
     position: fixed;
     left: 35vw;
     z-index: 2;
-    transition: width 0.2s, left 0.2s linear;
+    transition: width 0.3s, left 0.2s linear;
 }
 #mainpage_blurry_text{
     position: relative;

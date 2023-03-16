@@ -10,7 +10,7 @@ console.log(mp_w.style.left)
     console.log(scrollY)
     mp_t.style.top = 50 - (scrollY*0.1) + "vh"
     mp_c.style.top = 5 - (scrollY*0.1) + "vh" 
-    m_t.style.top =  100 - (scrollY*0.1)+ "vh" 
+    m_t.style.top =  80 - (scrollY*0.1)+ "vh" 
     g_t.style.top =  240 + "vh" 
 
     mp_w.style.left = 35 + "vw"
@@ -19,13 +19,13 @@ console.log(mp_w.style.left)
     g_c.style.marginTop = 100 + "vh"
 
 
-    if( scrollY > 500 &&  1000 > scrollY){
+    if( scrollY > 400 &&  1000 > scrollY){
         mp_w.style.left = 0 + "vw"
         m_t.style.left = 12 + "%" 
     }
     
-    if(scrollY >= 1000){
-        g_t.style.top =  175 - (scrollY*0.1)+ "vh" 
+    if(scrollY >= 900){
+        g_t.style.top =  150 - (scrollY*0.1)+ "vh" 
         mp_w.style.left = 0 + "vw"
         mp_w.style.width = 100 + "vw"
         m_t.style.left = -100 + "%" 
@@ -42,11 +42,11 @@ r1.addEventListener("click", e=>{
     window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 r2.addEventListener("click", e=>{
-    window.scrollTo({ top: 800, behavior: 'smooth' })
+    window.scrollTo({ top: 650, behavior: 'smooth' })
 })
 r3.addEventListener("click", e=>{
     window.scrollTo({ top: 1400, behavior: 'smooth' })
 })
 r4.addEventListener("click", e=>{
-    window.scrollTo({ top: 5000, behavior: 'smooth' })
+    window.scrollTo({ top: 4600, behavior: 'smooth' })
 })
