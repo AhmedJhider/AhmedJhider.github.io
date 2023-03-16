@@ -33,6 +33,10 @@ console.log(mp_w.style.left)
 })
 
 r1 = document.querySelector("#r1")
+r2 = document.querySelector("#r2")
+r3 = document.querySelector("#r3")
+r3 = document.querySelector("#r3")
+
 r1.addEventListener("click", e=>{
     window.scrollTo({ top: 0, behavior: 'smooth' })
 })
@@ -43,5 +47,5 @@ r3.addEventListener("click", e=>{
     window.scrollTo({ top: 700, behavior: 'smooth' })
 })
 r4.addEventListener("click", e=>{
-    window.scrollTo({ top: 2400, behavior: 'smooth' })
+    window.scrollTo({ top: 2500, behavior: 'smooth' })
 })
