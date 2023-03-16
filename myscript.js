@@ -7,18 +7,24 @@ g_c = document.querySelector("#gallery_container")
 
 console.log(mp_w.style.left)
  window.addEventListener("scroll", e =>{
+    var mq = window.matchMedia( "(max-width: 2000px)" );
+if (mq.matches) {
+    g_t.style.top =  10 - (scrollY*0.1)+ "vh" 
+}
+else{
+    
     console.log(scrollY)
     mp_t.style.top = 50 - (scrollY*0.1) + "vh"
     mp_c.style.top = 5 - (scrollY*0.1) + "vh" 
     m_t.style.top =  80 - (scrollY*0.1)+ "vh" 
     g_t.style.top =  240 + "vh" 
-
+    
     mp_w.style.left = 35 + "vw"
     mp_w.style.width = 65 + "vw"
     m_t.style.left = -100 + "%" 
     g_c.style.marginTop = 100 + "vh"
-
-
+    
+    
     if( scrollY > 400 &&  1000 > scrollY){
         mp_w.style.left = 0 + "vw"
         m_t.style.left = 12 + "%" 
@@ -31,6 +37,7 @@ console.log(mp_w.style.left)
         m_t.style.left = -100 + "%" 
         g_c.style.marginTop = 5 + "vh"
     }
+}
 })
 
 r1 = document.querySelector("#r1")
