@@ -7,7 +7,7 @@ g_c = document.querySelector("#gallery_container")
 
 console.log(mp_w.style.left)
  window.addEventListener("scroll", e =>{
-    var mq = window.matchMedia( "(max-width: 2000px)" );
+    var mq = window.matchMedia( "(max-width: 1200)" );
 if (mq.matches) {
     g_t.style.top =  10 - (scrollY*0.1)+ "vh" 
 }
