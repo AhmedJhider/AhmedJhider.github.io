@@ -39,7 +39,7 @@ a{
     position: fixed;
     left: 35vw;
     z-index: 2;
-    transition: width 0.2s, left 0.2s ease-out;
+    transition: width 0.2s, left 0.2s linear;
 }
 #mainpage_blurry_text{
     position: relative;
@@ -81,7 +81,7 @@ a{
 }
 #me_title{
     top: 100vh;
-    left: 12%;
+    left: -100%;
     width: 50vw;
     position: absolute;
     font-size: 24px;
@@ -92,7 +92,7 @@ a{
 
 }
 body{
-    height: 320vh;
+    height: 700vh;
 }
 #gallery_text{
     top: 240vh;

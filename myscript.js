@@ -8,23 +8,24 @@ g_c = document.querySelector("#gallery_container")
 console.log(mp_w.style.left)
  window.addEventListener("scroll", e =>{
     console.log(scrollY)
-    mp_t.style.top = 50 - (scrollY*0.226628895184136) + "vh"
-    mp_c.style.top = 5 - (scrollY*0.226628895184136) + "vh" 
-    m_t.style.top =  100 - (scrollY*0.226628895184136)+ "vh" 
+    mp_t.style.top = 50 - (scrollY*0.1) + "vh"
+    mp_c.style.top = 5 - (scrollY*0.1) + "vh" 
+    m_t.style.top =  100 - (scrollY*0.1)+ "vh" 
     g_t.style.top =  240 + "vh" 
 
     mp_w.style.left = 35 + "vw"
     mp_w.style.width = 65 + "vw"
-    m_t.style.left = 12 + "%" 
+    m_t.style.left = -100 + "%" 
     g_c.style.marginTop = 100 + "vh"
 
 
-    if(scrollY > 300){
+    if( scrollY > 500 &&  1000 > scrollY){
         mp_w.style.left = 0 + "vw"
+        m_t.style.left = 12 + "%" 
     }
     
-    if(scrollY > 500){
-        g_t.style.top =  175 - (scrollY*0.226628895184136)+ "vh" 
+    if(scrollY >= 1000){
+        g_t.style.top =  175 - (scrollY*0.1)+ "vh" 
         mp_w.style.left = 0 + "vw"
         mp_w.style.width = 100 + "vw"
         m_t.style.left = -100 + "%" 
@@ -35,17 +36,17 @@ console.log(mp_w.style.left)
 r1 = document.querySelector("#r1")
 r2 = document.querySelector("#r2")
 r3 = document.querySelector("#r3")
-r3 = document.querySelector("#r3")
+r4 = document.querySelector("#r4")
 
 r1.addEventListener("click", e=>{
     window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 r2.addEventListener("click", e=>{
-    window.scrollTo({ top: 400, behavior: 'smooth' })
+    window.scrollTo({ top: 800, behavior: 'smooth' })
 })
 r3.addEventListener("click", e=>{
-    window.scrollTo({ top: 700, behavior: 'smooth' })
+    window.scrollTo({ top: 1400, behavior: 'smooth' })
 })
 r4.addEventListener("click", e=>{
-    window.scrollTo({ top: 2500, behavior: 'smooth' })
+    window.scrollTo({ top: 5000, behavior: 'smooth' })
 })
