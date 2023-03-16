@@ -43,5 +43,5 @@ r3.addEventListener("click", e=>{
     window.scrollTo({ top: 700, behavior: 'smooth' })
 })
 r4.addEventListener("click", e=>{
-    window.scrollTo({ top: 1800, behavior: 'smooth' })
+    window.scrollTo({ top: 2400, behavior: 'smooth' })
 })
