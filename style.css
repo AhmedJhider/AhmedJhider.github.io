@@ -8,11 +8,12 @@
     right: 15%;
     font-size: 18px;
     top: 5vh;
+    transition: top 0.3s linear;
 }
 .nav_item{
     width: 75px;
     text-align: center;
-
+    transition: top 0.3s linear;
 }
 a{
     text-decoration: none;
@@ -22,14 +23,17 @@ a{
     position: relative;
     top: 50vh;
     transform: translate(0,-50%);
-    left: 15%; 
+    left: 15%;
+    transition: top 0.3s linear;
 }
 #mainpage_name{
     font-size: 75px;
     font-weight: 700;
+    transition: top 0.3s linear;
 }
 #mainpage_discover{
     font-weight: bold;
+    transition: top 0.3s linear;
 }
 #mainpage_white{
     overflow: hidden;
@@ -39,7 +43,7 @@ a{
     position: fixed;
     left: 35vw;
     z-index: 2;
-    transition: width 0.3s, left 0.2s linear;
+    transition: width 0.4s, left 0.2s linear, top 0.3s linear;
 }
 #mainpage_blurry_text{
     position: relative;
@@ -49,7 +53,7 @@ a{
     top: 120px;
     font-size: 20px;
     white-space: nowrap;
-
+    transition: top 0.3s linear;
 }
 #mainpage_promo{
     position: relative;;
@@ -80,7 +84,7 @@ a{
     filter: blur(8px);
 }
 #me_title{
-    top: 100vh;
+    top: 10vh;
     left: -100%;
     width: 50vw;
     position: absolute;

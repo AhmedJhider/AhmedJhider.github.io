@@ -14,9 +14,9 @@ if (mq.matches) {
 else{
     
     console.log(scrollY)
-    mp_t.style.top = 50 - (scrollY*0.1) + "vh"
-    mp_c.style.top = 5 - (scrollY*0.1) + "vh" 
-    m_t.style.top =  80 - (scrollY*0.1)+ "vh" 
+    mp_t.style.top = 50  + "vh"
+    mp_c.style.top = 5  + "vh" 
+    m_t.style.top =  10  + "vh" 
     g_t.style.top =  240 + "vh" 
     
     mp_w.style.left = 35 + "vw"
@@ -25,13 +25,21 @@ else{
     g_c.style.marginTop = 100 + "vh"
     
     
-    if( scrollY > 400 &&  1000 > scrollY){
+    if( scrollY > 300 &&  1000 > scrollY){
+        mp_t.style.top = 50 - 300 + "vh"
+        mp_c.style.top = 5 - 300 + "vh" 
         mp_w.style.left = 0 + "vw"
-        m_t.style.left = 12 + "%" 
+        m_t.style.left = 5 + "%" 
     }
     
-    if(scrollY >= 900){
-        g_t.style.top =  150 - (scrollY*0.1)+ "vh" 
+    if(scrollY >= 1000){
+        mp_t.style.top = 50 - 300 + "vh"
+        mp_c.style.top = 5 - 300 + "vh" 
+        m_t.style.top =  10  + "vh" 
+        g_t.style.top =  240 + "vh" 
+
+        
+        g_t.style.top =  20 - ((scrollY-1100)*0.1)+ "vh" 
         mp_w.style.left = 0 + "vw"
         mp_w.style.width = 100 + "vw"
         m_t.style.left = -100 + "%" 
