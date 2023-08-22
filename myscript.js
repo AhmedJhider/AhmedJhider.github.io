@@ -25,14 +25,14 @@ else{
     g_c.style.marginTop = 100 + "vh"
     
     
-    if( scrollY > 300 &&  1000 > scrollY){
+    if( scrollY > 300 &&  900 > scrollY){
         mp_t.style.top = 50 - 300 + "vh"
         mp_c.style.top = 5 - 300 + "vh" 
         mp_w.style.left = 0 + "vw"
         m_t.style.left = 5 + "%" 
     }
     
-    if(scrollY >= 1000){
+    if(scrollY >= 900){
         mp_t.style.top = 50 - 300 + "vh"
         mp_c.style.top = 5 - 300 + "vh" 
         m_t.style.top =  10  + "vh" 
